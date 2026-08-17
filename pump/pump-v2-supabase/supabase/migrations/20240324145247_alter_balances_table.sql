@@ -1,0 +1,3 @@
+ALTER TABLE balances
+DROP COLUMN name,
+DROP COLUMN symbol;

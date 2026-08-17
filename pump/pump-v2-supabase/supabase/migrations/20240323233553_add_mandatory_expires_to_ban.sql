@@ -1,0 +1,2 @@
+ALTER TABLE bans
+ALTER COLUMN expires SET NOT NULL;

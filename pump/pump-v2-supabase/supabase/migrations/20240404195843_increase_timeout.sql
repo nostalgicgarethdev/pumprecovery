@@ -1,0 +1,1 @@
+ALTER DATABASE postgres SET statement_timeout = '180s';

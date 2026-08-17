@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS add_banned_term_and_delete_replies(target_term TEXT)

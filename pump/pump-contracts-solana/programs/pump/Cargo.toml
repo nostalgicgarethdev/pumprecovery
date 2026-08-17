@@ -1,0 +1,23 @@
+[package]
+name = "pump"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "pump"
+
+[features]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "0.31.1", features = ["event-cpi", "init-if-needed"] }
+anchor-spl = "0.31.1"
+spl-token-metadata-interface = "0.6.0"
+

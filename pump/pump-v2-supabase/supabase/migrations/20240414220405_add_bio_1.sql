@@ -1,0 +1,1 @@
+ALTER TABLE users2 ADD COLUMN bio TEXT;

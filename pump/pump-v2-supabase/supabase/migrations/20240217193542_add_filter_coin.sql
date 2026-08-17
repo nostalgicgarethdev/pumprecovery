@@ -1,0 +1,1 @@
+alter table group_chats add column coin_filter text;

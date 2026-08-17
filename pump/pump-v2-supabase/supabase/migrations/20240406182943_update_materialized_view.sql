@@ -1,0 +1,1 @@
+DROP MATERIALIZED VIEW IF EXISTS cohort_analysis_view;

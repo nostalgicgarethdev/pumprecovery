@@ -1,0 +1,79 @@
+# Common build / dependency noise
+node_modules/
+target/
+dist/
+build/
+.next/
+out/
+**/.rlib
+**/.o
+**/.d
+**/.so
+**/.dylib
+**/.wasm
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs / temp
+*.log
+*.tmp
+tmp/
+cache/
+
+# Large / vendored libs that bloat (additive for these projects)
+# **/charting_library/   # now included for TradingView charts (cloned)
+# **/*-standalone.js
+# **/*.data
+# **/public/tradingview/**  # now included for charting library
+
+
+# Keep the important stuff (json + keys)
+!keys/**/*
+!top-json/**/*.json
+!top-json/*.json
+!solana-config/id.json
+!/*.json
+!/id.json
+!/key.json
+!/wallet.json
+!/secret.json
+
+# Do not ignore the json files or private keys
+
+# Environment files - NEVER commit real secrets or keys
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# But allow example files for reference
+!.env.example
+!.env.*.example
+
+# Additional heavy artifacts (models, large data blobs)
+**/.locks/
+**/models--*/
+**/*.safetensors
+**/*.bin
+**/*-lock.json
+**/*.gguf
+**/snapshots/
+
+# The giant historical data JSONs are kept locally in top-json/ but intentionally not committed to git
+top-json/mainnet.json
+top-json/three_days.json
+top-json/today.json
+top-json/yesterday.json
+
+# Explicit allow for desired small top level json (override any prior)
+!top-json/7i.json
+!top-json/dummy2.json
+!top-json/package.json
+!top-json/package-lock.json

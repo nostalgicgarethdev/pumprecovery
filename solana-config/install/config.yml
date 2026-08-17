@@ -1,0 +1,40 @@
+---
+json_rpc_url: http://api.devnet.solana.com
+update_manifest_pubkey:
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+current_update_manifest: null
+update_poll_secs: 3600
+explicit_release: !Semver 1.18.12
+releases_dir: /Users/staccoverflow/.local/share/solana/install/releases
+active_release_dir: /Users/staccoverflow/.local/share/solana/install/active_release

@@ -1,0 +1,1 @@
+alter table group_chats add column hide_creations boolean;

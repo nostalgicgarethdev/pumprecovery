@@ -1,0 +1,1 @@
+SELECT cron.schedule('0 0 * * *', $$REFRESH MATERIALIZED VIEW CONCURRENTLY cohort_analysis_view$$);

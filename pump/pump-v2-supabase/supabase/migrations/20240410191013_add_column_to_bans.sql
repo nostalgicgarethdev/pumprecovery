@@ -1,0 +1,2 @@
+ALTER TABLE bans
+DROP COLUMN by_admin

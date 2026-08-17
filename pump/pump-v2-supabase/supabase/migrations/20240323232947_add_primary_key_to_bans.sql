@@ -1,0 +1,2 @@
+ALTER TABLE bans
+ADD PRIMARY KEY (origin);

@@ -1,0 +1,1 @@
+alter table candlesticks add column slot numeric;

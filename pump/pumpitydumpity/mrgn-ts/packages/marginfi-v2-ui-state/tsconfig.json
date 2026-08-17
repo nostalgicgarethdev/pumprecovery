@@ -1,0 +1,16 @@
+{
+  "extends": "@mrgnlabs/tsconfig/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "lib": [ "dom" ]
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,5 @@
+ALTER TABLE users2
+ADD COLUMN username TEXT UNIQUE;
+
+ALTER TABLE users2
+ADD COLUMN profile_image TEXT;

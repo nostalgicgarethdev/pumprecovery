@@ -1,0 +1,33 @@
+{
+  "name": "rune-minting-bonding-curve",
+  "version": "1.0.0",
+  "description": "A Node.js server that generates PSBTs on a bonding curve for minting runes, with client-side signing.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/rune-minting-bonding-curve.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "psbt",
+    "bonding curve",
+    "rune minting",
+    "nodejs",
+    "html"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/rune-minting-bonding-curve/issues"
+  },
+  "homepage": "https://github.com/yourusername/rune-minting-bonding-curve#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "bitcoinjs-lib": "^5.2.0",
+    "bip174": "^2.0.0",
+    "body-parser": "^1.19.0"
+  }
+}

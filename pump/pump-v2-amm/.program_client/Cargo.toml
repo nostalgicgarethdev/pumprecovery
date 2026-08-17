@@ -1,0 +1,11 @@
+[package]
+name = "program_client"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+trident-client = {path = "../../trident/crates/client"}
+
+[dependencies.pump-v2-amm]
+path = "../programs/pump-v2-amm"
+features = ["no-entrypoint"]

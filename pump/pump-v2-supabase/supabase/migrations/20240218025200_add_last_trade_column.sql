@@ -1,0 +1,1 @@
+alter table coins add column last_trade_timestamp numeric;

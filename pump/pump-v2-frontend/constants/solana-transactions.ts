@@ -1,0 +1,1 @@
+export const MICRO_LAMPORTS_PRIORITY_FEE = 500_000;

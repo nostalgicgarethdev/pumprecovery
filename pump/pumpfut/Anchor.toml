@@ -1,0 +1,44 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+amm = "CsN1N8qaMJUwoGFWt3xV4u246n2cuZy9AWLws78e3a1K"
+autocrat_migrator = "MigRDW6uxyNMDBD8fX2njCRyJC4YZk2Rx9pDUZiAESt"
+autocrat = "5scUH1qY87Awh5D8bQkbP2uv9BaXJXiMgrqRBw1K2vVv"
+conditional_vault = "F3RzPAtBQvUAAdDHD8AsPKFhDB1H38SULNKTW39dYrw8"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+propose = "yarn run ts-node scripts/initializeProposal.ts"
+initialize-dao = "yarn run ts-node scripts/initializeDao.ts"
+finalize = "yarn run ts-node scripts/finalizeProposal.ts"
+metadata = "yarn run ts-node scripts/uploadMetadata.ts"
+send-tokens = "yarn run ts-node scripts/sendTokens.ts"
+crank = "yarn run ts-node scripts/crankTwap.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/*.ts"
+
+[test]
+startup_wait = 5000
+shutdown_wait = 2000
+upgradeable = false
+
+[[test.genesis]]
+address = "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb"
+program = "./tests/fixtures/openbook_v2.so"
+
+[[test.genesis]]
+address = "TWAP7frdvD3ia7TWc8e9SxZMmrpd2Yf3ifSPAHS8VG3"
+program = "./tests/fixtures/openbook_twap.so"
+
+[[test.genesis]]
+address = "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s"
+program = "./tests/fixtures/mpl_token_metadata.so"

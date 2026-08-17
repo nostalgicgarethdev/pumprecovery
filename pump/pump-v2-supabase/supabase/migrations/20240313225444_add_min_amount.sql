@@ -1,0 +1,1 @@
+alter table group_chats ADD column min_amount numeric default 0;

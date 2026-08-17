@@ -1,0 +1,4 @@
+CREATE TABLE pump_pal_group_chats (
+    chat_id BIGINT PRIMARY KEY,
+    date_added TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Minting on a Bonding Curve</title>
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <h1>Rune Minting Service</h1>
+    <p>Welcome to our Rune Minting Service. Mint your runes on a bonding curve!</p>
+    
+    <script>
+        // Check if a mint ID was passed by query
+        const urlParams = new URLSearchParams(window.location.search);
+        const mintId = urlParams.get('mint');
+        if (mintId) {
+            document.write(`
+                <div id="mintingInterface">
+                    <button id="generatePsbtBtn">Generate PSBT</button>
+                    <p id="psbtInfo">Click the button to generate a PSBT for minting your rune.</p>
+                </div>
+
+                <div id="runeSection">
+                    <h2>Your Etched Rune</h2>
+                    <p id="runeInfo">Your etched rune will be displayed here after the minting process is complete.</p>
+                </div>
+            `);
+        } else {
+            document.write(`
+                <div id="mintingSection">
+                    <button id="etchRuneBtn">Etch Rune</button>
+                    <p id="etchInfo">Click the button to etch your rune.</p>
+                </div>
+
+                <div id="runeSection">
+                    <h2>Your Etched Rune</h2>
+                    <p id="runeInfo">Your etched rune will be displayed here.</p>
+                </div>
+            `);
+        }
+    </script>
+</body>
+</html>

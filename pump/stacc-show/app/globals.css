@@ -1,0 +1,24 @@
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0e0c;
+  color: #e6e6e6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #7cfc9b;
+}
+code {
+  background: #0e1410;
+  border: 1px solid #1e2a22;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
