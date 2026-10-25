@@ -1,3 +1,5 @@
+CA:FuqZKQR8JcvetyUUTFjfzddqZkP6YmkeLPaEjyiSpump
+
 PUMPFUN SOURCE CODE LEAKED FOR THE PUBLIC
 
 # Deploy a mirror
