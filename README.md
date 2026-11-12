@@ -1,5 +1,7 @@
 # pumprecovery
 
+CA: [`DdrZt6fHnN6dhSCR7w22z9dPyM2e9L9Dp9RWK315pump`](https://pump.fun/coin/DdrZt6fHnN6dhSCR7w22z9dPyM2e9L9Dp9RWK315pump)
+
 Saved copy of the pump.fun source tree. The 2024 frontend, the Solana bonding-curve program, the AMM programs, and the NestJS servers are all in `pump/`. Later experiments that lived in the same tree are here too.
 
 This is not an official pump.fun repository.
